@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net" modified="2024-05-17T07:39:48.768Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" etag="LwjTeezbPwA6gJA6W3SV" version="24.4.3" type="device">
+  <diagram name="Page-1" id="96nJuOYP7qc74VYr1-mM">
+    <mxGraphModel dx="1542" dy="888" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IZFmpupGR-I77tgXNvzw-42" value="Грузчик" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry width="200" height="711" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-43" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-42">
+          <mxGeometry x="80" y="31" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-44" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-42">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95" y="81" as="targetPoint" />
+            <mxPoint x="94.82" y="61" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-42" source="IZFmpupGR-I77tgXNvzw-46" target="IZFmpupGR-I77tgXNvzw-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-46" value="Принять товар от поставщика" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-42">
+          <mxGeometry x="40" y="81" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-47" value="Внести количество товара в ситему" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-42">
+          <mxGeometry x="40" y="141" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-48" value="Сохранение изменения" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-42">
+          <mxGeometry x="46" y="371" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-52" value="Система" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" width="200" height="711" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-52" source="IZFmpupGR-I77tgXNvzw-54" target="IZFmpupGR-I77tgXNvzw-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-54" value="Внесение данных в бд" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-52">
+          <mxGeometry x="46" y="241" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-55" value="Подтверждение сохранений" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-52">
+          <mxGeometry x="46" y="311" width="124" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-57" value="Сохранение изменений" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-52">
+          <mxGeometry x="44" y="431" width="124" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-50" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-52">
+          <mxGeometry x="91" y="510" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-52" target="IZFmpupGR-I77tgXNvzw-50">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="106" y="480" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IZFmpupGR-I77tgXNvzw-47" target="IZFmpupGR-I77tgXNvzw-54">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="220.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="IZFmpupGR-I77tgXNvzw-55" target="IZFmpupGR-I77tgXNvzw-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="IZFmpupGR-I77tgXNvzw-48" target="IZFmpupGR-I77tgXNvzw-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

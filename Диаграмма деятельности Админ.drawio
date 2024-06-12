@@ -1,0 +1,214 @@
+<mxfile host="app.diagrams.net" modified="2024-05-17T07:36:15.453Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" etag="o1mb-SnOQvHipaN3dvmp" version="24.4.3" type="device">
+  <diagram name="Page-1" id="96nJuOYP7qc74VYr1-mM">
+    <mxGraphModel dx="1822" dy="1049" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IZFmpupGR-I77tgXNvzw-42" value="Админ" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry width="200" height="711" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-43" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-42">
+          <mxGeometry x="80" y="31" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-44" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-42">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95" y="81" as="targetPoint" />
+            <mxPoint x="94.82" y="61" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-42" source="IZFmpupGR-I77tgXNvzw-46" target="IZFmpupGR-I77tgXNvzw-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-46" value="Добавление нового сотрудника" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-42">
+          <mxGeometry x="40" y="81" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-47" value="Внести данные нового сотрудника" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-42">
+          <mxGeometry x="40" y="141" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-48" value="Сохранение изменений" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-42">
+          <mxGeometry x="46" y="371" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-49" value="Подтвердить" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-42">
+          <mxGeometry x="35" y="601" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-50" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-42">
+          <mxGeometry x="80" y="670" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-42" target="IZFmpupGR-I77tgXNvzw-50">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95" y="640" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-52" value="Система" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" width="200" height="711" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-52" source="IZFmpupGR-I77tgXNvzw-54" target="IZFmpupGR-I77tgXNvzw-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-54" value="Внесение данных в бд" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-52">
+          <mxGeometry x="46" y="241" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-55" value="Сообщение о добавлении сотрудника" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-52">
+          <mxGeometry x="46" y="311" width="124" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-52" source="IZFmpupGR-I77tgXNvzw-57" target="IZFmpupGR-I77tgXNvzw-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-57" value="Сохранение изменений" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-52">
+          <mxGeometry x="44" y="431" width="124" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-58" value="Сообщение о успешном добавлении нового сотрудника" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-52">
+          <mxGeometry x="42" y="511" width="128" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IZFmpupGR-I77tgXNvzw-47" target="IZFmpupGR-I77tgXNvzw-54">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="220.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="IZFmpupGR-I77tgXNvzw-55" target="IZFmpupGR-I77tgXNvzw-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="IZFmpupGR-I77tgXNvzw-48" target="IZFmpupGR-I77tgXNvzw-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IZFmpupGR-I77tgXNvzw-58" target="IZFmpupGR-I77tgXNvzw-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-63" value="Админ" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" width="200" height="711" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-64" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-63">
+          <mxGeometry x="80" y="31" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-65" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-63">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95" y="81" as="targetPoint" />
+            <mxPoint x="94.82" y="61" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-63" source="IZFmpupGR-I77tgXNvzw-67" target="IZFmpupGR-I77tgXNvzw-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-67" value="Изменить данные&amp;nbsp; сотрудника" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-63">
+          <mxGeometry x="40" y="81" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-68" value="Внести данные сотрудника" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-63">
+          <mxGeometry x="40" y="141" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-69" value="Сохранение изменений" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-63">
+          <mxGeometry x="46" y="371" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-70" value="Подтвердить" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-63">
+          <mxGeometry x="35" y="601" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-71" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-63">
+          <mxGeometry x="80" y="670" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-63" target="IZFmpupGR-I77tgXNvzw-71">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95" y="640" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-73" value="Система" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" width="200" height="711" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-73" source="IZFmpupGR-I77tgXNvzw-75" target="IZFmpupGR-I77tgXNvzw-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-75" value="Внесение данных в бд" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-73">
+          <mxGeometry x="46" y="241" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-76" value="Сообщение о изменении данных сотрудника" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-73">
+          <mxGeometry x="46" y="311" width="124" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-73" source="IZFmpupGR-I77tgXNvzw-78" target="IZFmpupGR-I77tgXNvzw-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-78" value="Сохранение изменений" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-73">
+          <mxGeometry x="44" y="431" width="124" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-79" value="Сообщение о успешном изменении данных сотрудника" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-73">
+          <mxGeometry x="42" y="511" width="124" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IZFmpupGR-I77tgXNvzw-68" target="IZFmpupGR-I77tgXNvzw-75">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="220.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="IZFmpupGR-I77tgXNvzw-76" target="IZFmpupGR-I77tgXNvzw-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="IZFmpupGR-I77tgXNvzw-69" target="IZFmpupGR-I77tgXNvzw-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IZFmpupGR-I77tgXNvzw-79" target="IZFmpupGR-I77tgXNvzw-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-84" value="Админ" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" width="200" height="711" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-85" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-84">
+          <mxGeometry x="80" y="31" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-86" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-84">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95" y="81" as="targetPoint" />
+            <mxPoint x="94.82" y="61" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-88" value="Удалить сотрудника" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-84">
+          <mxGeometry x="40" y="81" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-90" value="Подтвердить удаление" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-84">
+          <mxGeometry x="46" y="371" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-91" value="Подтвердить" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-84">
+          <mxGeometry x="35" y="601" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-92" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-84">
+          <mxGeometry x="80" y="670" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-84" target="IZFmpupGR-I77tgXNvzw-92">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95" y="640" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-94" value="Система" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" width="200" height="711" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-94" source="IZFmpupGR-I77tgXNvzw-96" target="IZFmpupGR-I77tgXNvzw-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-96" value="Внесение изменения в бд" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-94">
+          <mxGeometry x="46" y="150" width="120" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-97" value="Сообщение о удалении сотрудника" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-94">
+          <mxGeometry x="44" y="290" width="124" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="IZFmpupGR-I77tgXNvzw-94" source="IZFmpupGR-I77tgXNvzw-99" target="IZFmpupGR-I77tgXNvzw-100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-99" value="Сохранение изменений" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-94">
+          <mxGeometry x="44" y="431" width="124" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-100" value="Сообщение о успешном удалении сотрудника" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="IZFmpupGR-I77tgXNvzw-94">
+          <mxGeometry x="42" y="511" width="124" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IZFmpupGR-I77tgXNvzw-88" target="IZFmpupGR-I77tgXNvzw-96">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="160.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="IZFmpupGR-I77tgXNvzw-97" target="IZFmpupGR-I77tgXNvzw-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="IZFmpupGR-I77tgXNvzw-90" target="IZFmpupGR-I77tgXNvzw-99">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IZFmpupGR-I77tgXNvzw-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IZFmpupGR-I77tgXNvzw-100" target="IZFmpupGR-I77tgXNvzw-91">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
