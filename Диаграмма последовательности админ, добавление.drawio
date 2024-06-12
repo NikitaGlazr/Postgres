@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net" modified="2024-05-21T09:32:05.903Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0" etag="5ayYr6xY87bmWg_JC-eH" version="24.4.4" type="device">
+  <diagram name="Page-1" id="Sj2x6cW2y5JQ7Eo2TBlC">
+    <mxGraphModel dx="628" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gwOjxGkQuXVdQYi5bwYu-195" value="Админ" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="70" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="gwOjxGkQuXVdQYi5bwYu-196" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="80" y="140" width="10" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="gwOjxGkQuXVdQYi5bwYu-197" value="Программа" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="304" y="70" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="gwOjxGkQuXVdQYi5bwYu-198" value="бд" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="500" y="70" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="gwOjxGkQuXVdQYi5bwYu-199" value="Открыть список сотрудников" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" y="160" as="sourcePoint" />
+            <mxPoint x="350" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gwOjxGkQuXVdQYi5bwYu-200" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="354" y="130" width="10" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="gwOjxGkQuXVdQYi5bwYu-201" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="550" y="360" width="10" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="gwOjxGkQuXVdQYi5bwYu-202" value="Запрос для добавления&lt;br&gt;сотрудника" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.0036" width="160" relative="1" as="geometry">
+            <mxPoint x="364" y="380" as="sourcePoint" />
+            <mxPoint x="550" y="380" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gwOjxGkQuXVdQYi5bwYu-203" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="gwOjxGkQuXVdQYi5bwYu-200">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="550" y="440" as="sourcePoint" />
+            <mxPoint x="90" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gwOjxGkQuXVdQYi5bwYu-220" value="Вернуть результат" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="gwOjxGkQuXVdQYi5bwYu-203">
+          <mxGeometry x="0.0056" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gwOjxGkQuXVdQYi5bwYu-204" value="Вывод списка сотрудников" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="350" y="440" as="sourcePoint" />
+            <mxPoint x="90" y="440.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gwOjxGkQuXVdQYi5bwYu-232" value="Вывод списка сотрудников" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="1" target="gwOjxGkQuXVdQYi5bwYu-196">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="350" y="230" as="sourcePoint" />
+            <mxPoint x="400" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gwOjxGkQuXVdQYi5bwYu-233" value="Нажать кнопку добавить" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="94" y="280" as="sourcePoint" />
+            <mxPoint x="354" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gwOjxGkQuXVdQYi5bwYu-235" value="Заполнить данными сотрудника" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" y="330" as="sourcePoint" />
+            <mxPoint x="350" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gwOjxGkQuXVdQYi5bwYu-236" value="Нажать на кнопку сохранить" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="94" y="380" as="sourcePoint" />
+            <mxPoint x="354" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
