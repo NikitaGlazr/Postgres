@@ -1,0 +1,247 @@
+https://chat.mistral.ai/chat/a74f9d63-e450-4fe9-858f-1cee7a4bded2
+
+https://beta.theb.ai/home
+
+CREATE TABLE Clients (
+  ID serial PRIMARY KEY,
+  ФИО varchar(255) NOT NULL,
+  Номер_телефона varchar(255) NOT NULL
+);
+
+
+CREATE TABLE Employees (
+  ID serial PRIMARY KEY,
+  ФИО varchar(255) NOT NULL,
+  Логин varchar(255) UNIQUE NOT NULL,
+  Пароль varchar(255) NOT NULL
+);
+
+CREATE TABLE Components (
+  ID serial PRIMARY KEY,
+  Название varchar(255) NOT NULL,
+  Характеристики text NOT NULL,
+  Стоимость numeric(10, 2) NOT NULL
+);
+
+CREATE TABLE Computers (
+  ID serial PRIMARY KEY,
+  Название_сборки varchar(255) NOT NULL,
+  ID_компонента_1 integer REFERENCES Components(ID),
+  ID_компонента_2 integer REFERENCES Components(ID),
+  ID_компонента_3 integer REFERENCES Components(ID),
+  ID_компонента_4 integer REFERENCES Components(ID),
+  ID_компонента_5 integer REFERENCES Components(ID),
+  ID_компонента_6 integer REFERENCES Components(ID),
+  ID_компонента_7 integer REFERENCES Components(ID)
+);
+
+CREATE TABLE PickupPoints (
+  ID serial PRIMARY KEY,
+  Адрес varchar(255) NOT NULL
+);
+
+CREATE TABLE Orders (
+  ID serial PRIMARY KEY,
+  ID_компьютера integer REFERENCES Computers(ID),
+  ID_клиента integer REFERENCES Clients(ID),
+  ID_точки_выдачи integer REFERENCES PickupPoints(ID),
+  Дата_заказа date NOT NULL,
+  Доставка_на_дом boolean NOT NULL
+);
+
+
+CREATE TABLE Repair (
+  ID serial PRIMARY KEY,
+  ID_клиента integer REFERENCES Clients(ID),
+  Тип_техники varchar(255) NOT NULL,
+  Предполагаемый_вид_поломки text NOT NULL,
+  Примерный_срок_выполнения integer NOT NULL,
+  Примерная_стоимость numeric(10, 2) NOT NULL,
+  ID_сотрудника integer REFERENCES Employees(ID),
+  Результат_ремонта text NOT NULL,
+  Дата_выполнения date NOT NULL
+);
+
+CREATE TABLE DiagnosticRequests (
+  ID serial PRIMARY KEY,
+  ID_клиента integer REFERENCES Clients(ID),
+  Тип_техники varchar(255) NOT NULL,
+  Текстовое_описание_проблем text NOT NULL,
+  Адрес varchar(255) NOT NULL,
+  Удобное_время time NOT NULL,
+  ID_сотрудника integer REFERENCES Employees(ID),
+  Статус varchar(255) NOT NULL,
+  Итоговая_сумма numeric(10, 2) NOT NULL
+);
+
+
+
+
+-- Inserting into Clients
+INSERT INTO Clients (ФИО, Номер_телефона) VALUES
+('Иванов Иван Иванович', '+79991234567'),
+('Петров Петр Петрович', '+79992345678'),
+('Сидоров Сидор Сидорович', '+79993456789'),
+('Александров Александр Александрович', '+79994567890'),
+('Федоров Федор Федорович', '+79995678901');
+
+-- Inserting into Employees
+INSERT INTO Employees (ФИО, Логин, Пароль) VALUES
+('Кузнецов Кузнец Кузнецович', 'kuznecov', 'password1'),
+('Макаров Макар Макарович', 'makarov', 'password2'),
+('Хлебников Хлебник Хлебникович', 'hlebnikov', 'password3'),
+('Смирнов Смирн Смирнович', 'smirnov', 'password4'),
+('Попов Поп Попович', 'popov', 'password5');
+
+-- Inserting into Components
+INSERT INTO Components (Название, Характеристики, Стоимость) VALUES
+('Intel Core i7-9700K', '3.6 GHz, 8 cores, 12MB cache', 350.00),
+('NVIDIA GeForce RTX 2080 Ti', '11 GB GDDR6, 4352 CUDA cores', 1199.00),
+('G.Skill TridentZ RGB 16GB', 'DDR4, 3200 MHz, CL16', 85.00),
+('ASUS ROG Strix Z390-E', 'LGA 1151, ATX, Intel Z390', 200.00),
+('Samsung 970 EVO Plus 1TB', 'M.2, NVMe, 1TB', 170.00);
+
+-- Inserting into Computers
+INSERT INTO Computers (Название_сборки, ID_компонента_1, ID_компонента_2, ID_компонента_3, ID_компонента_4, ID_компонента_5, ID_компонента_6, ID_компонента_7) VALUES
+('Gaming PC 1', 1, 2, 3, 4, 5, NULL, NULL),
+('Gaming PC 2', 1, 2, 3, 4, NULL, NULL, NULL),
+('Workstation 1', 1, NULL, 3, 4, 5, NULL, NULL),
+('Budget PC 1', 1, NULL, 3, NULL, NULL, NULL, NULL),
+('High-end PC 1', 1, 2, 3, 4, 5, NULL, NULL);
+
+-- Inserting into PickupPoints
+INSERT INTO PickupPoints (Адрес) VALUES
+('ул. Пушкина, д. 12'),
+('ул. Лермонтова, д. 34'),
+('ул. Чехова, д. 56'),
+('ул. Тургенева, д. 78'),
+('ул. Достоевского, д. 90');
+
+-- Inserting into Orders
+INSERT INTO Orders (ID_компьютера, ID_клиента, ID_точки_выдачи, Дата_заказа, Доставка_на_дом) VALUES
+(1, 1, 1, '2022-01-01', false),
+(2, 2, 2, '2022-01-02', true),
+(3, 3, 3, '2022-01-03', false),
+(4, 4, 4, '2022-01-04', true),
+(5, 5, 5, '2022-01-05', false);
+
+-- Inserting into Repair
+INSERT INTO Repair (ID_клиента, Тип_техники, Предполагаемый_вид_поломки, Примерный_срок_выполнения, Примерная_стоимость, ID_сотрудника, Результат_ремонта, Дата_выполнения) VALUES
+(1, 'Ноутбук', 'Не заряжается', 3, 50.00, 1, 'Замена аккумулятора', '2022-01-06'),
+(2, 'Принтер', 'Не печатает', 2, 30.00, 2, 'Замена печатной головки', '2022-01-07'),
+(3, 'Смартфон', 'Не включается', 5, 100.00, 3, 'Замена материнской платы', '2022-01-08'),
+(4, 'Монитор', 'Нет изображения', 4, 70.00, 4, 'Замена подсветки', '2022-01-09'),
+(5, 'Настольный компьютер', 'Не загружается', 6, 150.00, 5, 'Замена жесткого диска', '2022-01-10');
+
+-- Inserting into DiagnosticRequests
+INSERT INTO DiagnosticRequests (ID_клиента, Тип_техники, Текстовое_описание_проблем, Адрес, Удобное_время, ID_сотрудника, Статус, Итоговая_сумма) VALUES
+(1, 'Ноутбук', 'Не работает клавиатура', 'ул. Пушкина, д. 12', '10:00', 1, 'Выполнено', 50.00),
+(2, 'Принтер', 'Некорректная печать', 'ул. Лермонтова, д. 34', '12:00', 2, 'Выполнено', 30.00),
+(3, 'Смартфон', 'Не работает тачскрин', 'ул. Чехова, д. 56', '14:00', 3, 'Выполнено', 100.00),
+(4, 'Монитор', 'Плохое качество изображения', 'ул. Тургенева, д. 78', '16:00', 4, 'Выполнено', 70.00),
+(5, 'Настольный компьютер', 'Медленная работа', 'ул. Достоевского, д. 90', '18:00', 5, 'Выполнено', 150.00);
+
+
+ЗАПРОСЫ
+
+Получить физический размер файлов (хранилища) базы данных:
+SELECT pg_size_pretty(pg_database_size('database_name'));
+
+
+Подсчитать количество строк в таблице:
+SELECT COUNT(*) FROM table_name;
+
+
+Получить первые 5 символов каждой строки из столбца "M":
+SELECT SUBSTRING("M" FROM 1 FOR 5) FROM "Table";
+
+
+Подсчитать количество символов в столбце "M":
+SELECT LENGTH("M") FROM "Table";
+
+
+Преобразовать:    ИВаноВ ИваН ИВАновИч     к      иВАНОВ иВАН иВАНОВИЧ:
+SELECT 
+    CONCAT(
+        LOWER(SUBSTRING('ИВаноВ', 1, 1)),
+        UPPER(SUBSTRING('ИВаноВ', 2))
+    ) AS result1,
+    CONCAT(
+        LOWER(SUBSTRING('ИваН', 1, 1)),
+        UPPER(SUBSTRING('ИваН', 2))
+    ) AS result2,
+    CONCAT(
+        LOWER(SUBSTRING('ИВАновИч', 1, 1)),
+        UPPER(SUBSTRING('ИВАновИч', 2))
+    ) AS result3;
+
+
+
+Оставить только большие буквы. маленькие.
+SELECT REGEXP_REPLACE("Характеристики", '[^A-ZА-Я]', '', 'g') AS Характеристики
+FROM components;
+
+SELECT REGEXP_REPLACE("Характеристики", '[^a-zа-я]', '', 'g') AS Характеристики
+FROM components;
+
+
+Убрать лишние пробелы.
+SELECT regexp_replace(Характеристики, '\s+', ' ', 'g') FROM components
+
+
+
+
+
+например: ФИО клиента, его номер заказа, и характеристики пк.
+
+SELECT
+  Clients.ФИО AS "Clients Full Name",
+  Orders.ID AS "Order Number",
+  Computers.Название_сборки AS "Computer Name",
+  Components1.Название AS "Component 1 Name",
+  Components1.Характеристики AS "Component 1 Specifications",
+  Components2.Название AS "Component 2 Name",
+  Components2.Характеристики AS "Component 2 Specifications",
+  Components3.Название AS "Component 3 Name",
+  Components3.Характеристики AS "Component 3 Specifications",
+  Components4.Название AS "Component 4 Name",
+  Components4.Характеристики AS "Component 4 Specifications",
+  Components5.Название AS "Component 5 Name",
+  Components5.Характеристики AS "Component 5 Specifications",
+  Components6.Название AS "Component 6 Name",
+  Components6.Характеристики AS "Component 6 Specifications",
+  Components7.Название AS "Component 7 Name",
+  Components7.Характеристики AS "Component 7 Specifications"
+FROM
+  Orders
+  INNER JOIN Clients ON Orders.ID_клиента = Clients.ID
+  INNER JOIN Computers ON Orders.ID_компьютера = Computers.ID
+  LEFT JOIN Components AS Components1 ON Computers.ID_компонента_1 = Components1.ID
+  LEFT JOIN Components AS Components2 ON Computers.ID_компонента_2 = Components2.ID
+  LEFT JOIN Components AS Components3 ON Computers.ID_компонента_3 = Components3.ID
+  LEFT JOIN Components AS Components4 ON Computers.ID_компонента_4 = Components4.ID
+  LEFT JOIN Components AS Components5 ON Computers.ID_компонента_5 = Components5.ID
+  LEFT JOIN Components AS Components6 ON Computers.ID_компонента_6 = Components6.ID
+  LEFT JOIN Components AS Components7 ON Computers.ID_компонента_7 = Components7.ID;
+
+
+
+
+Клиент и то что он отдал в ремонт.
+SELECT
+  Clients.ФИО AS "Clients Full Name", 
+  Repair.Тип_техники AS "Device Type"
+FROM  Repair 
+INNER JOIN Clients ON Repair.ID_клиента = Clients.ID;
+
+
+
+вывести компоненты, которые стоят больше 150.
+SELECT
+  Components.Название AS "Component Name",
+  Components.Характеристики AS "Specifications",
+  Components.Стоимость AS "Price"
+FROM
+  Components
+WHERE
+  Components.Стоимость > 150;
